@@ -1,113 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Register page</title>
 </head>
 
 <body>
-    <header>
-        <header>register</header>
-        <main>
-            <h2>registration form</h2>
-            <form id="registerForm">
-                <label>Full Name</label><br>
-                <input type="text"
-                placeholder="Enter Your Name" id="name"><br>
-            </form>
-            <label>Gender</label>
-            <label>date of birth</label><br>
-            <input type="date" placeholder="DOB"><br>
-            <input type="radio" name="gender">Female>
-            <input type="password" placeholder="Enter your Email"><br>le
-            <section>
-                <h2>Welcome to NRIIT LEARNING MANAGEMENT System</h2>
-                <p>
-                    The NRIIT MANAGEMENT System helps students explore courses, register online, learn from experienced
-                    trainers and track their learning journey.
-                </p>
-            </section>
-            <section>
-                <h2>Popular Courses</h2>
-                <article>
-                    <h3>Python Fullstack</h3>
-                    <p>learn c, java,javascript</p>
-                </article>
-            </section>
-            <section>
-                <p>
-                    empowering students with practical software skills
-                </p>
-            </section>
-            <section>
-                <h2>About NRIIT</h2>
-                <p>
-                <im
-                </P>
-            </section>
-            <section>
-                <h2>Courses Offered</h2>
-                <table border=" " cellpadding="10">
-                    <tr>
-                        <th>Course</th>
-                        <th>Duration</th>
-                        <th>Mode</th>
-                    </tr>
-                    <tr>
-                        <td>Python Fullstack</td>
-                        <td>Months</td>
-                        <td>Offline</td>
-                    </tr>
-                </table>
-                    <section>
-                        <h2>Learning Path</h2>
-                        <ol>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>flask</li>
-                            <li>javascript</li>
-                            <li>Database</li>
-                        </ol>
-                    </section>
-                        <section>
-                            <h2>Meet our Trainers</h2>
-                            <article>
-                                <img sc=""images/trainer1.jpg"
-                                alt=""Python Trainer" width="180">
-                                <h3>p.navya</h3>
-                                <p>Python full stack learner</p>
-                                <p>Experience: 2+ years</p>
-                            </article>
-                        </section>            <
-
-            
-            <h2>why choose NRIIT?</h2>
-            <ul>
-                <li>experienced trainer</li>
-                <li>industrie projects</li>
-                <li>placemet assistance</li>
-            </ul>
-
-    </header>
-    Home <br>
-    <h1>Trainer NRIIT LEARNING MANAGEMENT</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="trainer.html">Trainer</a>
-        <a href="register.html">Register</a>
-        <a href="login.html">Login</a>
-        <a href="contact.html">Contact</a>
-        <button onclick="showmessage">Click Me</button>
-        <button onclick="changeHeading()">Change Heading</button>
-        <button id="btnGreeting">Welcome</button>
+    <header>Register</header>
+    <main>
+        <h2>Student Registration </h2>
+        <form id="registerForm" method="POST">
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter Your Name" id="name" name="name"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter your email" id="email" name="email"><br>
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter Your Password" id="password" name="password"><br>
+            <label>Date of Birth</label><br>
+            <input type="date" placeholder="DOB" name="dob"><br>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female <br><br>
+            <label>Select Course</label>
+            <br>
+            <select name="course">
+                <option>Python FullStack</option>
+                <option>Java FullStack</option>
+            </select>
+            <br>
+            <button type="submit" value="Register">Register</button>
+        </form>
     </main>
-    <script rec="js/script.js"></script>
-    <form id= LoginForm>
-        <label>Email</label><br>
-        <input type="email"    
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
 </body>
+
+</html>
